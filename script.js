@@ -1,10 +1,10 @@
 const video = document.getElementById("video");
 
 Promise.all([
-   faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-   faceapi.nets.faceExpressionNet.loadFromUri('/models'),
+   faceapi.nets.tinyFaceDetector.loadFromUri('/Face-Scanner/models'),
+   faceapi.nets.faceLandmark68Net.loadFromUri('/Face-Scanner/models'),
+   faceapi.nets.faceRecognitionNet.loadFromUri('/Face-Scanner/models'),
+   faceapi.nets.faceExpressionNet.loadFromUri('/Face-Scanner/models'),
 ]).then(startVideo)
 
 function startVideo(){
